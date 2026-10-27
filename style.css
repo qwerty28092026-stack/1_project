@@ -1,0 +1,319 @@
+/* ===== GENERAL SETTINGS ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #272727;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #222222;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+header h1 {
+    color: #39a900;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #39a900;
+}
+
+/* ===== BUTTONS ===== */
+
+button {
+    background-color: #39a900;
+    color: #ffffff;
+    border: none;
+    padding: 13px 26px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #2e8700;
+    transform: translateY(-2px);
+}
+
+/* ===== HERO SECTION ===== */
+
+#home {
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(120deg, #f4ffed, #ffffff);
+}
+
+#home h2 {
+    text-align: left;
+    max-width: 650px;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+#home p {
+    max-width: 550px;
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+#home img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 30px;
+    box-shadow: 0 15px 35px rgba(57, 169, 0, 0.15);
+}
+
+/* ===== FOOD CATEGORIES ===== */
+
+#categories {
+    background-color: #ffffff;
+}
+
+#categories article {
+    display: inline-block;
+    vertical-align: top;
+    width: 22%;
+    min-width: 150px;
+    margin: 1%;
+    padding: 25px 15px;
+    text-align: center;
+    background-color: #f7fff2;
+    border-radius: 20px;
+    border: 1px solid #e8f5df;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#categories article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+#categories h3 {
+    color: #328d00;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+#categories p {
+    color: #777777;
+}
+
+/* ===== POPULAR DISHES ===== */
+
+#menu {
+    background-color: #f8faf6;
+}
+
+#menu article {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-width: 190px;
+    margin: 1.4%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#menu article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+#menu article img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#menu article h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+#menu article p {
+    color: #39a900;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* ===== TESTIMONIALS ===== */
+
+#reviews {
+    text-align: center;
+}
+
+#reviews img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+}
+
+#reviews p {
+    max-width: 650px;
+    margin: 0 auto 15px;
+    color: #666666;
+    font-size: 18px;
+}
+
+/* ===== SERVICES ===== */
+
+#services {
+    background-color: #f7fff2;
+}
+
+#services article {
+    display: inline-block;
+    vertical-align: top;
+    width: 22%;
+    min-width: 150px;
+    margin: 1%;
+    padding: 25px 15px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+#services article h3 {
+    color: #328d00;
+    margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: #202820;
+    color: #ffffff;
+    padding: 45px 8%;
+    text-align: center;
+}
+
+footer h2 {
+    color: #7de34b;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px 0;
+    color: #dddddd;
+}
+
+footer a:hover {
+    color: #7de34b;
+}
+
+/* ===== MOBILE VERSION ===== */
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    section {
+        padding: 55px 5%;
+    }
+
+    section h2 {
+        font-size: 29px;
+    }
+
+    #home {
+        align-items: center;
+        text-align: center;
+    }
+
+    #home h2 {
+        text-align: center;
+    }
+
+    #home img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #categories article,
+    #menu article,
+    #services article {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+}
